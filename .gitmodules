@@ -1,0 +1,3 @@
+[submodule "Prusa-Firmware"]
+	path = Prusa-Firmware
+	url = git@github.com:friebel/Bondtech-Prusa-Firmware.git
