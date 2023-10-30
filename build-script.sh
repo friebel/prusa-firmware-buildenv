@@ -14,6 +14,6 @@ else
     exit 7
 fi
 
-bash PF-build.sh -b Auto -l "${build_lang}" -v "${BOARD_HEADER}" -n 1 -o 0 -d RC
+bash PF-build.sh -b Auto -l "${build_lang}" -v "${BOARD_HEADER}" -n 1 -o 0
 
 # vim: et sw=4 ts=4 sts=4
