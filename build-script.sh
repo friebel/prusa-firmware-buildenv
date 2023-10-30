@@ -5,10 +5,10 @@ BOARD_HEADER="Bondtech-MK3S-16-EINSy10a-M.h"
 
 cd Prusa-Firmware
 
-if git grep -q EN_ONLY PF-build.sh; then
-    build_lang="EN_ONLY"
-elif git grep -q EN_FARM PF-build.sh; then
+if git grep -q EN_FARM PF-build.sh; then
     build_lang="EN_FARM"
+elif git grep -q EN_ONLY PF-build.sh; then
+    build_lang="EN_ONLY"
 else
     echo "$0: Error detecting which option to use to build english-only firmware"
     exit 7
