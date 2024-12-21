@@ -1,2 +1,2 @@
 #!/bin/bash
-docker build . -t prusa-fw-builder
+docker build --platform linux/amd64 -t prusa-fw-builder .
