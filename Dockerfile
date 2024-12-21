@@ -1,6 +1,3 @@
-#!/bin/echo docker build . -f
-# -*- coding: utf-8 -*-
-
 FROM ubuntu:22.04
 RUN apt update
 RUN apt upgrade -y
