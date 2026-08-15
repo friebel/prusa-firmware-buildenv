@@ -1,2 +1,4 @@
 #!/bin/bash
-docker build --platform linux/amd64 -t prusa-fw-builder .
+# shellcheck source=docker-detect.sh
+source "$(dirname "$0")/docker-detect.sh"
+"${DOCKER}" build --platform linux/arm64 -t localhost/prusa-fw-builder .
